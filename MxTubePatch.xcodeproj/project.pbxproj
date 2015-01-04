@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4747F81C1A59827100543A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4747F81B1A59827100543A1F /* Foundation.framework */; };
+		4747F8271A59827100543A1F /* MxTubePatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4747F8261A59827100543A1F /* MxTubePatch.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4747F8181A59827100543A1F /* MxTubePatch.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MxTubePatch.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4747F81B1A59827100543A1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4747F8201A59827100543A1F /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		4747F8211A59827100543A1F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		4747F8231A59827100543A1F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		4747F8241A59827100543A1F /* MxTubePatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MxTubePatch-Prefix.pch"; sourceTree = "<group>"; };
+		4747F8251A59827100543A1F /* MxTubePatch.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = MxTubePatch.xm; sourceTree = "<group>"; };
+		4747F8261A59827100543A1F /* MxTubePatch.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MxTubePatch.mm; sourceTree = "<group>"; };
+		4747F82B1A59827100543A1F /* MxTubePatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MxTubePatch.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MxTubePatch.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4747F8141A59827100543A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4747F81C1A59827100543A1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4747F80D1A59827100543A1F = {
+			isa = PBXGroup;
+			children = (
+				4747F81D1A59827100543A1F /* MxTubePatch */,
+				4747F81A1A59827100543A1F /* Frameworks */,
+				4747F8191A59827100543A1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4747F8191A59827100543A1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4747F8181A59827100543A1F /* MxTubePatch.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4747F81A1A59827100543A1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4747F81B1A59827100543A1F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4747F81D1A59827100543A1F /* MxTubePatch */ = {
+			isa = PBXGroup;
+			children = (
+				4747F8251A59827100543A1F /* MxTubePatch.xm */,
+				4747F8261A59827100543A1F /* MxTubePatch.mm */,
+				4747F81E1A59827100543A1F /* Package */,
+				4747F8221A59827100543A1F /* Supporting Files */,
+			);
+			path = MxTubePatch;
+			sourceTree = "<group>";
+		};
+		4747F81E1A59827100543A1F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				4747F81F1A59827100543A1F /* DEBIAN */,
+				4747F8281A59827100543A1F /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		4747F81F1A59827100543A1F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4747F8201A59827100543A1F /* control.txt */,
+				4747F8211A59827100543A1F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4747F8221A59827100543A1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4747F8231A59827100543A1F /* PackageVersion.plist */,
+				4747F8241A59827100543A1F /* MxTubePatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4747F8281A59827100543A1F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4747F8291A59827100543A1F /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4747F8291A59827100543A1F /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4747F82A1A59827100543A1F /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4747F82A1A59827100543A1F /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				4747F82B1A59827100543A1F /* MxTubePatch.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4747F8151A59827100543A1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4747F8171A59827100543A1F /* MxTubePatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4747F82E1A59827100543A1F /* Build configuration list for PBXNativeTarget "MxTubePatch" */;
+			buildPhases = (
+				4747F8121A59827100543A1F /* ShellScript */,
+				4747F8131A59827100543A1F /* Sources */,
+				4747F8141A59827100543A1F /* Frameworks */,
+				4747F8151A59827100543A1F /* Headers */,
+				4747F8161A59827100543A1F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MxTubePatch;
+			productName = MxTubePatch;
+			productReference = 4747F8181A59827100543A1F /* MxTubePatch.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4747F80E1A59827100543A1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					4747F8171A59827100543A1F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4747F8111A59827100543A1F /* Build configuration list for PBXProject "MxTubePatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4747F80D1A59827100543A1F;
+			productRefGroup = 4747F8191A59827100543A1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4747F8171A59827100543A1F /* MxTubePatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4747F8121A59827100543A1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		4747F8161A59827100543A1F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4747F8131A59827100543A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4747F8271A59827100543A1F /* MxTubePatch.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4747F82C1A59827100543A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		4747F82D1A59827100543A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		4747F82F1A59827100543A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MxTubePatch/MxTubePatch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		4747F8301A59827100543A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MxTubePatch/MxTubePatch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4747F8111A59827100543A1F /* Build configuration list for PBXProject "MxTubePatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4747F82C1A59827100543A1F /* Debug */,
+				4747F82D1A59827100543A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4747F82E1A59827100543A1F /* Build configuration list for PBXNativeTarget "MxTubePatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4747F82F1A59827100543A1F /* Debug */,
+				4747F8301A59827100543A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4747F80E1A59827100543A1F /* Project object */;
+}
