@@ -1,7 +1,7 @@
 Package: com.alsahli.MxTubePatch
 Name: MxTubePatch
-Version: 0.1-1
-Description: 
+Version: 1.0-1
+Description: Get rid of that annoying 'New Version' alert. تباً للتديث الجديد'
 Section: System
 Depends: firmware (>= 5.0), mobilesubstrate
 Conflicts: 

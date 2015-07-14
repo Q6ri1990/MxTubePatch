@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4747F81C1A59827100543A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4747F81B1A59827100543A1F /* Foundation.framework */; };
 		4747F8271A59827100543A1F /* MxTubePatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4747F8261A59827100543A1F /* MxTubePatch.mm */; };
+		4747F8381A5982F300543A1F /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4747F8371A5982F300543A1F /* libsubstrate.dylib */; };
+		4747F83C1A59859F00543A1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4747F83B1A59859F00543A1F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +20,11 @@
 		4747F8211A59827100543A1F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		4747F8231A59827100543A1F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		4747F8241A59827100543A1F /* MxTubePatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MxTubePatch-Prefix.pch"; sourceTree = "<group>"; };
-		4747F8251A59827100543A1F /* MxTubePatch.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = MxTubePatch.xm; sourceTree = "<group>"; };
+		4747F8251A59827100543A1F /* MxTubePatch.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MxTubePatch.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4747F8261A59827100543A1F /* MxTubePatch.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MxTubePatch.mm; sourceTree = "<group>"; };
 		4747F82B1A59827100543A1F /* MxTubePatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MxTubePatch.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/MxTubePatch.plist; sourceTree = "<group>"; };
+		4747F8371A5982F300543A1F /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		4747F83B1A59859F00543A1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4747F83C1A59859F00543A1F /* UIKit.framework in Frameworks */,
+				4747F8381A5982F300543A1F /* libsubstrate.dylib in Frameworks */,
 				4747F81C1A59827100543A1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +61,8 @@
 		4747F81A1A59827100543A1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4747F83B1A59859F00543A1F /* UIKit.framework */,
+				4747F8371A5982F300543A1F /* libsubstrate.dylib */,
 				4747F81B1A59827100543A1F /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -287,6 +295,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MxTubePatch/MxTubePatch-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -307,6 +319,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MxTubePatch/MxTubePatch-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -337,6 +353,7 @@
 				4747F8301A59827100543A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
